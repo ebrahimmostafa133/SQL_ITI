@@ -1,0 +1,1326 @@
+<!DOCTYPE html><html><head>
+      <title>Notes</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/mohamed-sameh/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.22/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="mysql-database--comprehensive-exam-ready-study-notes">MySQL Database — Comprehensive Exam-Ready Study Notes </h1>
+<blockquote>
+<p><strong>Course Level:</strong> Intermediate–Advanced MySQL<br>
+<strong>Topics Covered:</strong> Database Types, Data Types, Constraints, Foreign Keys, DML, Subqueries, CTEs, Views, Materialized Views</p>
+</blockquote>
+<hr>
+<h2 id="table-of-contents">Table of Contents </h2>
+<ol>
+<li><a href="#1-database-types-overview">Database Types Overview</a>
+<ul>
+<li>1.1 Relational (SQL) Databases</li>
+<li>1.2 NoSQL – Document-Based Databases</li>
+<li>1.3 Other Database Models</li>
+<li>1.4 The ORM Bridge</li>
+<li>1.5 Trade-offs: Relational vs. NoSQL</li>
+</ul>
+</li>
+<li><a href="#2-mysql-data-types">MySQL Data Types</a>
+<ul>
+<li>2.1 Numeric Types</li>
+<li>2.2 String/Text Types</li>
+<li>2.3 Date and Time Types</li>
+<li>2.4 ENUM Type</li>
+<li>2.5 Generated Columns</li>
+</ul>
+</li>
+<li><a href="#3-constraints">Constraints</a>
+<ul>
+<li>3.1 PRIMARY KEY</li>
+<li>3.2 NOT NULL</li>
+<li>3.3 UNIQUE</li>
+<li>3.4 CHECK</li>
+<li>3.5 FOREIGN KEY</li>
+</ul>
+</li>
+<li><a href="#4-dml--data-manipulation-language">DML — Data Manipulation Language</a>
+<ul>
+<li>4.1 INSERT</li>
+<li>4.2 UPDATE</li>
+<li>4.3 DELETE</li>
+</ul>
+</li>
+<li><a href="#5-foreign-key-referential-actions">Foreign Key Referential Actions</a>
+<ul>
+<li>5.1 RESTRICT (Default)</li>
+<li>5.2 CASCADE</li>
+<li>5.3 SET NULL</li>
+<li>5.4 Adding/Dropping a Foreign Key with ALTER TABLE</li>
+</ul>
+</li>
+<li><a href="#6-subqueries-nested-queries">Subqueries (Nested Queries)</a>
+<ul>
+<li>6.1 What Is a Subquery?</li>
+<li>6.2 Operators with Subqueries</li>
+<li>6.3 ANY and ALL Keywords</li>
+</ul>
+</li>
+<li><a href="#7-common-table-expressions-ctes">Common Table Expressions (CTEs)</a>
+<ul>
+<li>7.1 What Is a CTE?</li>
+<li>7.2 CTE Syntax</li>
+<li>7.3 Chaining Multiple CTEs</li>
+<li>7.4 CTE vs. Subquery</li>
+</ul>
+</li>
+<li><a href="#8-views">Views</a>
+<ul>
+<li>8.1 Simple (Regular) View</li>
+<li>8.2 Creating a View</li>
+<li>8.3 Updatable Views — Rules</li>
+<li>8.4 Simple View vs. Direct Query — Performance</li>
+<li>8.5 CTE vs. View — Key Differences</li>
+<li>8.6 Materialized View</li>
+<li>8.7 Simple View vs. Materialized View — Comparison</li>
+</ul>
+</li>
+<li><a href="#9-quick-reference-summary">Quick Reference Summary</a></li>
+<li><a href="#10-potential-exam-questions">Potential Exam Questions</a></li>
+</ol>
+<hr>
+<h2 id="1-database-types-overview">1. Database Types Overview </h2>
+<h3 id="11-relational-sql-databases">1.1 Relational (SQL) Databases </h3>
+<p><strong>Relational databases</strong> store data in <strong>tables</strong> (rows and columns). They were the dominant model for decades and excel at:</p>
+<ul>
+<li><strong>Transactional operations (ACID):</strong> Banking transactions, batch processing — situations where a set of steps must either all succeed or all fail.</li>
+<li><strong>Structured queries:</strong> Using SQL (Structured Query Language) to query, filter, join, and aggregate data.</li>
+<li><strong>Data integrity:</strong> Enforcing relationships and rules at the database level.</li>
+</ul>
+<p><strong>How data is stored:</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Salary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Ahmed</td>
+<td>50,000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Sara</td>
+<td>60,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-nosql--document-based-databases">1.2 NoSQL – Document-Based Databases </h3>
+<p><strong>NoSQL databases</strong> (e.g., <strong>MongoDB</strong>) store data as <strong>documents</strong> (JSON-like objects). They were created to address limitations of relational databases.</p>
+<p><strong>Why NoSQL appeared:</strong></p>
+<ul>
+<li>In object-oriented backends (Java, Python, Node.js, etc.), data lives as <strong>objects/classes</strong> in memory.</li>
+<li>Storing objects in a relational table requires <strong>ORM mapping</strong> (Object-Relational Mapping) — a translation layer.</li>
+<li>For complex, nested data (e.g., a LinkedIn profile with arrays of jobs, education, contacts), relational databases require splitting data across <strong>multiple tables</strong> and <strong>JOINs</strong> to retrieve it — which is expensive.</li>
+</ul>
+<p><strong>LinkedIn Profile Example — Relational Approach:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>users          → id, name, about
+user_jobs      → user_id, title, company, start_date, description
+user_education → user_id, degree, institution, year
+user_contacts  → user_id, email, phone
+</code></pre><p>To retrieve a full profile → must JOIN all tables → <strong>expensive I/O</strong> (disk seeks across multiple locations).</p>
+<p><strong>LinkedIn Profile Example — Document (NoSQL) Approach:</strong></p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Ahmed"</span><span class="token punctuation">,</span>
+  <span class="token property">"about"</span><span class="token operator">:</span> <span class="token string">"..."</span><span class="token punctuation">,</span>
+  <span class="token property">"jobs"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Engineer"</span><span class="token punctuation">,</span> <span class="token property">"company"</span><span class="token operator">:</span> <span class="token string">"X"</span><span class="token punctuation">,</span> <span class="token property">"start_date"</span><span class="token operator">:</span> <span class="token string">"2020-01"</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">"education"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> <span class="token property">"degree"</span><span class="token operator">:</span> <span class="token string">"BSc"</span><span class="token punctuation">,</span> <span class="token property">"institution"</span><span class="token operator">:</span> <span class="token string">"Cairo University"</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">"contacts"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">"email"</span><span class="token operator">:</span> <span class="token string">"a@b.com"</span><span class="token punctuation">,</span> <span class="token property">"phone"</span><span class="token operator">:</span> <span class="token string">"01..."</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>The entire document is <strong>serialized</strong> (converted to a single string) and stored <strong>contiguously on disk</strong>. Retrieval is fast because everything is in one place.</p>
+<p><strong>Schema Flexibility:</strong> In NoSQL, one user can have 3 jobs and another can have 0 — no need to alter the schema.</p>
+<h3 id="13-other-database-models">1.3 Other Database Models </h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hierarchical</strong></td>
+<td>Stores data in a tree structure (parent–child). Very old model.</td>
+</tr>
+<tr>
+<td><strong>Network</strong></td>
+<td>Similar to hierarchical but allows multiple parent relationships.</td>
+</tr>
+<tr>
+<td><strong>Relational</strong></td>
+<td>Tables with rows and columns. Most common.</td>
+</tr>
+<tr>
+<td><strong>Document-Based</strong></td>
+<td>JSON-like documents (e.g., MongoDB).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="14-the-orm-bridge">1.4 The ORM Bridge </h3>
+<p><strong>ORM (Object-Relational Mapping)</strong> solves the <strong>impedance mismatch</strong> between:</p>
+<ul>
+<li><strong>Backend:</strong> Data stored as <strong>objects</strong> with properties.</li>
+<li><strong>Database:</strong> Data stored as <strong>rows and columns</strong>.</li>
+</ul>
+<p>An ORM maps each class to a table, and each property to a column. Examples: Hibernate (Java), SQLAlchemy (Python), Sequelize (Node.js), Entity Framework (.NET).</p>
+<h3 id="15-trade-offs-relational-vs-nosql">1.5 Trade-offs: Relational vs. NoSQL </h3>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Relational</th>
+<th>Document (NoSQL)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Retrieval (full object)</td>
+<td>Slow — requires JOINs across multiple tables</td>
+<td>Fast — data stored together</td>
+</tr>
+<tr>
+<td>Data Update (single field)</td>
+<td>Fast — update only one column</td>
+<td>Slow — must rewrite entire document (re-serialize)</td>
+</tr>
+<tr>
+<td>Schema flexibility</td>
+<td>Rigid — ALTER TABLE to add columns</td>
+<td>Flexible — each document can differ</td>
+</tr>
+<tr>
+<td>Complex queries / analytics</td>
+<td>Excellent (SQL)</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td>Transactions (ACID)</td>
+<td>Strong</td>
+<td>Varies</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⭐ <strong>What to Remember:</strong> NoSQL document stores are <strong>faster for reads</strong> (retrieve full object at once) but <strong>slower for updates</strong> (must rewrite the entire serialized document). Relational DBs are faster for <strong>partial updates</strong> (update one column, done).</p>
+</blockquote>
+<hr>
+<h2 id="2-mysql-data-types">2. MySQL Data Types </h2>
+<h3 id="21-numeric-types">2.1 Numeric Types </h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Storage</th>
+<th>Range (Signed)</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TINYINT</code></td>
+<td>1 byte</td>
+<td>-128 to 127</td>
+<td>Flags, small counts</td>
+</tr>
+<tr>
+<td><code>SMALLINT</code></td>
+<td>2 bytes</td>
+<td>-32,768 to 32,767</td>
+<td>Small numbers</td>
+</tr>
+<tr>
+<td><code>MEDIUMINT</code></td>
+<td>3 bytes</td>
+<td>~-8M to ~8M</td>
+<td>Medium integers</td>
+</tr>
+<tr>
+<td><code>INT</code> / <code>INTEGER</code></td>
+<td>4 bytes</td>
+<td>~-2.1B to ~2.1B</td>
+<td>Standard IDs, counts</td>
+</tr>
+<tr>
+<td><code>BIGINT</code></td>
+<td>8 bytes</td>
+<td>~-9.2×10¹⁸ to ~9.2×10¹⁸</td>
+<td>Large counters</td>
+</tr>
+<tr>
+<td><code>FLOAT</code></td>
+<td>4 bytes</td>
+<td>Approximate</td>
+<td>Decimal numbers (approximate)</td>
+</tr>
+<tr>
+<td><code>DOUBLE</code></td>
+<td>8 bytes</td>
+<td>More precise</td>
+<td>Scientific calculations</td>
+</tr>
+<tr>
+<td><code>DECIMAL(p,s)</code></td>
+<td>Variable</td>
+<td>Exact</td>
+<td>Money, financials — <strong>EXACT</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⭐ Use <code>DECIMAL</code> for <strong>monetary values</strong> — <code>FLOAT</code> and <code>DOUBLE</code> are <strong>approximate</strong> (floating-point errors).</p>
+</blockquote>
+<h3 id="22-stringtext-types">2.2 String/Text Types </h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Max Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CHAR(n)</code></td>
+<td>Fixed-length string — always uses n bytes</td>
+<td>255 chars</td>
+</tr>
+<tr>
+<td><code>VARCHAR(n)</code></td>
+<td>Variable-length string — uses only what's needed + 1–2 bytes for length</td>
+<td>65,535 bytes</td>
+</tr>
+<tr>
+<td><code>TEXT</code></td>
+<td>Long text, no prefix length needed</td>
+<td>65,535 chars</td>
+</tr>
+<tr>
+<td><code>MEDIUMTEXT</code></td>
+<td>Larger text</td>
+<td>~16 MB</td>
+</tr>
+<tr>
+<td><code>LONGTEXT</code></td>
+<td>Very large text</td>
+<td>~4 GB</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>CHAR</code> vs. <code>VARCHAR</code>:</strong></p>
+<ul>
+<li><code>CHAR(10)</code> always occupies <strong>10 bytes</strong>, even if value is "Hi" (2 chars) — pads with spaces.</li>
+<li><code>VARCHAR(10)</code> stores "Hi" in <strong>3 bytes</strong> (2 chars + 1 for length prefix).</li>
+<li><strong><code>CHAR</code> SELECT advantage:</strong> Because the size is always fixed, MySQL doesn't need to check the length prefix on each row → <strong>slightly faster reads</strong>.</li>
+<li><strong>PostgreSQL note:</strong> PostgreSQL explicitly states <code>CHAR</code> may be <strong>worse</strong> in performance than <code>VARCHAR</code>. Always check your DB documentation.</li>
+</ul>
+<blockquote>
+<p>⭐ <strong>What to Remember:</strong> Use <code>VARCHAR</code> by default. <code>CHAR</code> can be faster for <strong>fixed-width</strong> values (e.g., country codes, gender codes) but wastes space for variable-length data.</p>
+</blockquote>
+<h3 id="23-date-and-time-types">2.3 Date and Time Types </h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>What It Stores</th>
+<th>Range</th>
+<th>Timezone Handling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DATE</code></td>
+<td>Date only (YYYY-MM-DD)</td>
+<td>'1000-01-01' to '9999-12-31'</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>TIME</code></td>
+<td>Time only (HH:MM:SS)</td>
+<td>'-838:59:59' to '838:59:59'</td>
+<td>None</td>
+</tr>
+<tr>
+<td><code>DATETIME</code></td>
+<td>Date + Time</td>
+<td>'1000-01-01 00:00:00' to '9999-12-31 23:59:59'</td>
+<td><strong>None — stores as-is</strong></td>
+</tr>
+<tr>
+<td><code>TIMESTAMP</code></td>
+<td>Date + Time</td>
+<td>'1970-01-01 00:00:01' to <strong>'2038-01-19 03:14:07'</strong></td>
+<td><strong>Auto-converts to/from session timezone</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The 2038 Problem:</strong> <code>TIMESTAMP</code> is stored as a 32-bit Unix integer. Its maximum value is <strong>January 19, 2038</strong>. After that date, <code>TIMESTAMP</code> columns will fail to store values. Use <code>DATETIME</code> for dates beyond 2038.</p>
+<p><strong>Timezone Behavior:</strong></p>
+<ul>
+<li><strong><code>TIMESTAMP</code>:</strong> When you INSERT a value, MySQL converts it from your <strong>session timezone</strong> to UTC and stores it. When you SELECT, it converts back to your <strong>session timezone</strong>. Different users in different timezones will see different times — MySQL handles this automatically.</li>
+<li><strong><code>DATETIME</code>:</strong> Stores exactly what you give it. No timezone conversion. All users see the same value regardless of their timezone. <strong>You</strong> (the developer) are responsible for timezone handling in your application.</li>
+</ul>
+<p><strong>Best Practice:</strong> Store all times in <strong>UTC</strong> (Timezone offset +00:00), then convert to the user's local timezone in the application layer.</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Set session timezone (example)</span>
+<span class="token keyword keyword-SET">SET</span> time_zone <span class="token operator">=</span> <span class="token string">'+05:00'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- Check stored vs. retrieved values across timezone changes</span>
+</code></pre><p><strong>Date Format in MySQL:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- MySQL date format is: YYYY-MM-DD</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> table_name <span class="token punctuation">(</span>date_col<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token string">'2026-03-29'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><h3 id="24-enum-type">2.4 ENUM Type </h3>
+<p><code>ENUM</code> is a string column that can only hold <strong>one value from a predefined list</strong>.</p>
+<p><strong>Syntax:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> products <span class="token punctuation">(</span>
+  name     <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  size     <span class="token keyword keyword-ENUM">ENUM</span><span class="token punctuation">(</span><span class="token string">'XS'</span><span class="token punctuation">,</span> <span class="token string">'S'</span><span class="token punctuation">,</span> <span class="token string">'M'</span><span class="token punctuation">,</span> <span class="token string">'L'</span><span class="token punctuation">,</span> <span class="token string">'XL'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>What ENUM does:</strong></p>
+<ul>
+<li>Restricts the column to <strong>only the defined values</strong> — any other value causes an error.</li>
+<li>Also enforces the <strong>exact format</strong> of the value (e.g., must be 'XL', not 'xl' or 'Extra Large').</li>
+<li>Automatically adds a <strong>CHECK constraint</strong> — you don't need to add one manually.</li>
+</ul>
+<p><strong>How ENUM is stored internally:</strong></p>
+<ul>
+<li>MySQL stores ENUM values as their <strong>integer index</strong> (0, 1, 2…), not as strings.</li>
+<li><code>'XS'</code> → index 0, <code>'S'</code> → index 1, <code>'M'</code> → index 2, etc.</li>
+</ul>
+<p><strong>Advantage:</strong> Smaller storage (integer vs. string), better readability in schema.</p>
+<p><strong>Gotcha — Sorting:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Ordering by an ENUM column sorts by INDEX, not alphabetically</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> products <span class="token keyword keyword-ORDER">ORDER</span> <span class="token keyword keyword-BY">BY</span> size<span class="token punctuation">;</span>
+<span class="token comment">-- Result: XS (0), S (1), M (2), L (3), XL (4)</span>
+<span class="token comment">-- NOT alphabetical order!</span>
+</code></pre><blockquote>
+<p>⭐ <strong>What to Remember:</strong> When you <code>ORDER BY</code> an ENUM column, MySQL sorts by the internal <strong>integer index</strong>, not the displayed string value. This can produce unexpected ordering if your ENUM values aren't defined in the order you expect.</p>
+</blockquote>
+<h3 id="25-generated-columns">2.5 Generated Columns </h3>
+<p>A <strong>generated column</strong> automatically computes its value from an <strong>expression</strong> applied to other columns. You never insert into it manually — MySQL calculates it for you.</p>
+<p><strong>Use Case Example:</strong> Store an email, auto-extract the domain.</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> users <span class="token punctuation">(</span>
+  email   <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  domain  <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span>SUBSTRING_INDEX<span class="token punctuation">(</span>email<span class="token punctuation">,</span> <span class="token string">'@'</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> STORED
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> users <span class="token punctuation">(</span>email<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token string">'ahmed@ita.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- domain is auto-filled as 'ita.com'</span>
+</code></pre><p><strong>The <code>SUBSTRING_INDEX</code> function:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>SUBSTRING_INDEX(string, delimiter, count)
+  - count &gt; 0 → take from the LEFT up to the Nth delimiter
+  - count &lt; 0 → take from the RIGHT up to the Nth delimiter
+
+SUBSTRING_INDEX('ahmed@ita.com', '@', -1) → 'ita.com'
+</code></pre><p><strong>Two types of generated columns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Keyword</th>
+<th>Storage</th>
+<th>Recalculated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Virtual</strong></td>
+<td><code>VIRTUAL</code> (default)</td>
+<td>NOT stored on disk</td>
+<td>Every time it's selected</td>
+</tr>
+<tr>
+<td><strong>Stored</strong></td>
+<td><code>STORED</code></td>
+<td>Stored on disk</td>
+<td>Only once, when inserted/updated</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Virtual vs. Stored — Trade-offs:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>VIRTUAL</th>
+<th>STORED</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk space</td>
+<td>No extra space</td>
+<td>Uses extra space</td>
+</tr>
+<tr>
+<td>Read speed</td>
+<td>Slower (recalculates each time)</td>
+<td>Faster (reads from disk)</td>
+</tr>
+<tr>
+<td>Write speed</td>
+<td>Faster (nothing to store)</td>
+<td>Slower (stores on write)</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Infrequent reads, simple expressions</td>
+<td>Frequent reads, complex expressions</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important Rule:</strong> The expression in a generated column must be <strong>deterministic</strong> — the same input must always produce the same output.</p>
+<ul>
+<li>✅ <code>SUBSTRING_INDEX(email, '@', -1)</code> → deterministic</li>
+<li>❌ <code>NOW()</code> → non-deterministic (returns different time each call)</li>
+<li>❌ <code>RAND()</code> → non-deterministic (returns random value)</li>
+</ul>
+<p><strong>You cannot manually insert into a generated column:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- This will FAIL:</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> users <span class="token punctuation">(</span>email<span class="token punctuation">,</span> domain<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token string">'ahmed@ita.com'</span><span class="token punctuation">,</span> <span class="token string">'ita.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- Error: domain is a generated column</span>
+</code></pre><hr>
+<h2 id="3-constraints">3. Constraints </h2>
+<p><strong>Constraints</strong> are rules applied to columns (or tables) that the database enforces before accepting any INSERT or UPDATE. They protect <strong>data integrity</strong>.</p>
+<h3 id="31-primary-key">3.1 PRIMARY KEY </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> employees <span class="token punctuation">(</span>
+  id    <span class="token keyword keyword-INT">INT</span>         <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+  name  <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  email <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword keyword-UNIQUE">UNIQUE</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><ul>
+<li>A <code>PRIMARY KEY</code> enforces <strong>two rules simultaneously:</strong>
+<ol>
+<li><strong>UNIQUE</strong> — no two rows may have the same value.</li>
+<li><strong>NOT NULL</strong> — the value cannot be empty.</li>
+</ol>
+</li>
+<li>Only <strong>one</strong> PRIMARY KEY is allowed per table.</li>
+<li>Every table should have a primary key.</li>
+</ul>
+<h3 id="32-not-null">3.2 NOT NULL </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code>name <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+</code></pre><ul>
+<li>The column <strong>cannot be left empty</strong> (no <code>NULL</code> values).</li>
+<li>A value must be provided on INSERT.</li>
+</ul>
+<h3 id="33-unique">3.3 UNIQUE </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code>email <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword keyword-UNIQUE">UNIQUE</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+</code></pre><ul>
+<li>The value must be <strong>unique</strong> across all rows.</li>
+<li><code>UNIQUE</code> alone (without <code>NOT NULL</code>) allows <strong>one NULL value</strong> — because NULL ≠ NULL in SQL.</li>
+<li><code>UNIQUE + NOT NULL</code> ≈ <code>PRIMARY KEY</code>, except a table can have <strong>multiple</strong> UNIQUE NOT NULL columns.</li>
+</ul>
+<p><strong>Difference: PRIMARY KEY vs. UNIQUE NOT NULL:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>PRIMARY KEY</th>
+<th>UNIQUE NOT NULL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uniqueness</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>NOT NULL enforced</td>
+<td>✅</td>
+<td>✅ (explicitly)</td>
+</tr>
+<tr>
+<td>Max per table</td>
+<td><strong>1 only</strong></td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>Can have NULL?</td>
+<td>No</td>
+<td>No (you set NOT NULL)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-check-constraint">3.4 CHECK Constraint </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code>salary <span class="token keyword keyword-INT">INT</span> <span class="token keyword keyword-CHECK">CHECK</span> <span class="token punctuation">(</span>salary <span class="token operator">&gt;=</span> <span class="token number">30000</span><span class="token punctuation">)</span>
+</code></pre><ul>
+<li>Enforces a <strong>custom condition</strong> on the column value.</li>
+<li>Any INSERT or UPDATE that violates the condition is rejected with an error.</li>
+</ul>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Example: Enforce gender values</span>
+gender <span class="token keyword keyword-ENUM">ENUM</span><span class="token punctuation">(</span><span class="token string">'Male'</span><span class="token punctuation">,</span> <span class="token string">'Female'</span><span class="token punctuation">)</span>
+<span class="token comment">-- ENUM already acts as a CHECK constraint for allowed values</span>
+</code></pre><h3 id="35-foreign-key">3.5 FOREIGN KEY </h3>
+<p>See <strong>Section 5</strong> for full detail. A foreign key creates a <strong>relationship</strong> between two tables and enforces <strong>referential integrity</strong> — ensuring that a value in a child table actually exists in the parent table.</p>
+<hr>
+<h2 id="4-dml--data-manipulation-language">4. DML — Data Manipulation Language </h2>
+<h3 id="41-insert">4.1 INSERT </h3>
+<p><strong>Insert all columns (must match order defined in CREATE TABLE):</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> employees
+<span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'Ahmed'</span><span class="token punctuation">,</span> <span class="token string">'ahmed@email.com'</span><span class="token punctuation">,</span> <span class="token boolean">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Insert specific columns (recommended):</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> employees <span class="token punctuation">(</span>id<span class="token punctuation">,</span> name<span class="token punctuation">,</span> email<span class="token punctuation">)</span>
+<span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'Ahmed'</span><span class="token punctuation">,</span> <span class="token string">'ahmed@email.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Insert multiple rows at once:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> employees <span class="token punctuation">(</span>id<span class="token punctuation">,</span> name<span class="token punctuation">,</span> email<span class="token punctuation">)</span>
+<span class="token keyword keyword-VALUES">VALUES</span>
+  <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'Ahmed'</span><span class="token punctuation">,</span> <span class="token string">'ahmed@email.com'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'Sara'</span><span class="token punctuation">,</span>  <span class="token string">'sara@email.com'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'Omar'</span><span class="token punctuation">,</span>  <span class="token string">'omar@email.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Notes:</strong></p>
+<ul>
+<li>Strings go in <strong>single quotes</strong> <code>'value'</code> or <strong>double quotes</strong> <code>"value"</code>.</li>
+<li>Dates go in quotes in <code>'YYYY-MM-DD'</code> format.</li>
+<li>If you don't specify column names, you <strong>must</strong> provide values for <strong>all</strong> columns in the correct order.</li>
+<li>To skip a nullable column, either omit it (if columns are specified) or insert <code>NULL</code>.</li>
+</ul>
+<h3 id="42-update">4.2 UPDATE </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-UPDATE">UPDATE</span> employees
+<span class="token keyword keyword-SET">SET</span> name <span class="token operator">=</span> <span class="token string">'Mahmoud'</span>
+<span class="token keyword keyword-WHERE">WHERE</span> id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Update multiple columns:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-UPDATE">UPDATE</span> employees
+<span class="token keyword keyword-SET">SET</span> name <span class="token operator">=</span> <span class="token string">'Mahmoud'</span><span class="token punctuation">,</span> email <span class="token operator">=</span> <span class="token string">'mahmoud@email.com'</span>
+<span class="token keyword keyword-WHERE">WHERE</span> id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Multiple conditions:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- AND: both conditions must be true</span>
+<span class="token keyword keyword-UPDATE">UPDATE</span> employees <span class="token keyword keyword-SET">SET</span> name <span class="token operator">=</span> <span class="token string">'X'</span> <span class="token keyword keyword-WHERE">WHERE</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">AND</span> name <span class="token operator">=</span> <span class="token string">'Ahmed'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- OR: at least one condition must be true</span>
+<span class="token keyword keyword-UPDATE">UPDATE</span> employees <span class="token keyword keyword-SET">SET</span> department_id <span class="token operator">=</span> <span class="token number">100</span> <span class="token keyword keyword-WHERE">WHERE</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">OR</span> id <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+</code></pre><p><strong>⚠️ WARNING — UPDATE without WHERE:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-UPDATE">UPDATE</span> employees <span class="token keyword keyword-SET">SET</span> name <span class="token operator">=</span> <span class="token string">'X'</span><span class="token punctuation">;</span>
+<span class="token comment">-- This updates ALL rows in the table!</span>
+</code></pre><p>MySQL Workbench's <strong>Safe Update Mode</strong> will block UPDATE/DELETE without a WHERE clause using a primary key. To disable:</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-SET">SET</span> SQL_SAFE_UPDATES <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token comment">-- Then run your UPDATE</span>
+<span class="token comment">-- Re-enable afterwards if needed</span>
+<span class="token keyword keyword-SET">SET</span> SQL_SAFE_UPDATES <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><h3 id="43-delete">4.3 DELETE </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-FROM">FROM</span> employees <span class="token keyword keyword-WHERE">WHERE</span> id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><p><strong>⚠️ WARNING — DELETE without WHERE:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-FROM">FROM</span> employees<span class="token punctuation">;</span>
+<span class="token comment">-- Deletes ALL rows!</span>
+</code></pre><p><strong>DELETE syntax:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-FROM">FROM</span> table_name
+<span class="token keyword keyword-WHERE">WHERE</span> condition<span class="token punctuation">;</span>
+</code></pre><hr>
+<h2 id="5-foreign-key-referential-actions">5. Foreign Key Referential Actions </h2>
+<h3 id="what-is-a-foreign-key">What Is a Foreign Key? </h3>
+<p>A <strong>Foreign Key (FK)</strong> creates a <strong>relationship</strong> between two tables. It ensures that any value in the <strong>child table's FK column</strong> must exist in the <strong>parent table's referenced column</strong>.</p>
+<p><strong>Terminology:</strong></p>
+<ul>
+<li><strong>Parent table:</strong> The table that is referenced (e.g., <code>departments</code>).</li>
+<li><strong>Child table:</strong> The table holding the FK (e.g., <code>employees</code>).</li>
+<li><strong>Referential Integrity:</strong> The guarantee that no child record can point to a non-existent parent.</li>
+</ul>
+<p><strong>Example — Without FK (the problem):</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Employee with department_id = 500, but no department 500 exists!</span>
+<span class="token keyword keyword-UPDATE">UPDATE</span> employees <span class="token keyword keyword-SET">SET</span> department_id <span class="token operator">=</span> <span class="token number">500</span> <span class="token keyword keyword-WHERE">WHERE</span> id <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token comment">-- MySQL accepts this without complaint → Data integrity violated!</span>
+</code></pre><p><strong>Adding a Foreign Key:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- After tables are created, add the FK with ALTER TABLE:</span>
+<span class="token keyword keyword-ALTER">ALTER</span> <span class="token keyword keyword-TABLE">TABLE</span> employees
+<span class="token keyword keyword-ADD">ADD</span> <span class="token keyword keyword-CONSTRAINT">CONSTRAINT</span> fk_employee_department
+<span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>department_id<span class="token punctuation">)</span>
+<span class="token keyword keyword-REFERENCES">REFERENCES</span> departments<span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Or at table creation time:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> employees <span class="token punctuation">(</span>
+  id            <span class="token keyword keyword-INT">INT</span> <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+  name          <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  department_id <span class="token keyword keyword-INT">INT</span><span class="token punctuation">,</span>
+  <span class="token keyword keyword-CONSTRAINT">CONSTRAINT</span> fk_emp_dept <span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>department_id<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> departments<span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Naming Convention:</strong> <code>fk_&lt;child_table&gt;_&lt;parent_table&gt;</code> (e.g., <code>fk_employee_department</code>).</p>
+<hr>
+<h3 id="51-restrict-default">5.1 RESTRICT (Default) </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>department_id<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> departments<span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+<span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-RESTRICT">RESTRICT</span>
+<span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-UPDATE">UPDATE</span> <span class="token keyword keyword-RESTRICT">RESTRICT</span>
+</code></pre><ul>
+<li>If a <strong>parent row</strong> has children referencing it, you <strong>cannot delete or update</strong> that parent row.</li>
+<li>Error is thrown: MySQL refuses the operation.</li>
+<li>This is the <strong>default</strong> if you don't specify any action.</li>
+</ul>
+<p><strong>Workaround to delete:</strong> First delete (or update) all child records, then delete the parent.</p>
+<h3 id="52-cascade">5.2 CASCADE </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span>
+<span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-UPDATE">UPDATE</span> <span class="token keyword keyword-CASCADE">CASCADE</span>
+</code></pre><ul>
+<li><strong>ON DELETE CASCADE:</strong> When you delete a parent row, <strong>all child rows</strong> referencing it are <strong>automatically deleted</strong> too.</li>
+<li><strong>ON UPDATE CASCADE:</strong> When you update the parent's PK, <strong>all child FK values</strong> are updated to the new value automatically.</li>
+</ul>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Example: Delete department 100</span>
+<span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-FROM">FROM</span> departments <span class="token keyword keyword-WHERE">WHERE</span> id <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token comment">-- All employees in department 100 are also deleted!</span>
+</code></pre><h3 id="53-set-null">5.3 SET NULL </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-SET">SET</span> <span class="token boolean">NULL</span>
+<span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-UPDATE">UPDATE</span> <span class="token keyword keyword-SET">SET</span> <span class="token boolean">NULL</span>
+</code></pre><ul>
+<li>When you delete a parent row, the <strong>child FK column</strong> is set to <code>NULL</code>.</li>
+<li>The child row itself <strong>remains</strong> in the table — it just loses its parent reference.</li>
+<li><strong>Requirement:</strong> The FK column must allow <code>NULL</code> (no <code>NOT NULL</code> constraint).</li>
+</ul>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Employee was in department 300</span>
+<span class="token comment">-- Department 300 is deleted</span>
+<span class="token comment">-- Employee's department_id becomes NULL (employee still exists)</span>
+</code></pre><h3 id="54-addingdropping-a-foreign-key-with-alter-table">5.4 Adding/Dropping a Foreign Key with ALTER TABLE </h3>
+<p><strong>Drop an existing FK:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-ALTER">ALTER</span> <span class="token keyword keyword-TABLE">TABLE</span> employees
+<span class="token keyword keyword-DROP">DROP</span> <span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> fk_employee_department<span class="token punctuation">;</span>
+</code></pre><p><strong>Re-create with different actions:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-ALTER">ALTER</span> <span class="token keyword keyword-TABLE">TABLE</span> employees
+<span class="token keyword keyword-ADD">ADD</span> <span class="token keyword keyword-CONSTRAINT">CONSTRAINT</span> fk_employee_department
+<span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>department_id<span class="token punctuation">)</span>
+<span class="token keyword keyword-REFERENCES">REFERENCES</span> departments<span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+<span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span>
+<span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-UPDATE">UPDATE</span> <span class="token keyword keyword-RESTRICT">RESTRICT</span><span class="token punctuation">;</span>
+</code></pre><blockquote>
+<p>⭐ <strong>What to Remember:</strong> You cannot modify a FK in place. You must <strong>DROP</strong> it and <strong>recreate</strong> it.</p>
+</blockquote>
+<p><strong>Summary Table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>ON DELETE</th>
+<th>ON UPDATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RESTRICT (default)</td>
+<td>Block deletion if children exist</td>
+<td>Block update if children exist</td>
+</tr>
+<tr>
+<td>CASCADE</td>
+<td>Delete children automatically</td>
+<td>Update children's FK automatically</td>
+</tr>
+<tr>
+<td>SET NULL</td>
+<td>Set children's FK to NULL</td>
+<td>Set children's FK to NULL</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-subqueries-nested-queries">6. Subqueries (Nested Queries) </h2>
+<h3 id="61-what-is-a-subquery">6.1 What Is a Subquery? </h3>
+<p>A <strong>subquery</strong> (or <strong>nested query</strong> / <strong>inner query</strong>) is a <code>SELECT</code> statement <strong>inside</strong> another <code>SELECT</code>, <code>UPDATE</code>, or <code>DELETE</code> statement.</p>
+<p><strong>When to use:</strong> When the information needed in a <code>WHERE</code> condition lives in a <strong>different table</strong> and you don't know the exact value upfront.</p>
+<p><strong>How it executes:</strong></p>
+<ol>
+<li>The <strong>inner query (subquery)</strong> runs first.</li>
+<li>Its result is passed to the <strong>outer query</strong>.</li>
+<li>The outer query runs using that result.</li>
+</ol>
+<p><strong>Example — Find all employees in the "Open Source" department:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span>
+<span class="token keyword keyword-FROM">FROM</span> employees
+<span class="token keyword keyword-WHERE">WHERE</span> department_id <span class="token operator">=</span> <span class="token punctuation">(</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> id
+    <span class="token keyword keyword-FROM">FROM</span> departments
+    <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Open Source'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>The subquery <code>SELECT id FROM departments WHERE name = 'Open Source'</code> returns <code>100</code>, so the outer query becomes:</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> employees <span class="token keyword keyword-WHERE">WHERE</span> department_id <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+</code></pre><h3 id="62-operators-with-subqueries">6.2 Operators with Subqueries </h3>
+<p><strong>Use <code>=</code> when the subquery returns exactly ONE value:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-WHERE">WHERE</span> department_id <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> id <span class="token keyword keyword-FROM">FROM</span> departments <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Open Source'</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Use <code>IN</code> when the subquery returns MULTIPLE values:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-WHERE">WHERE</span> department_id <span class="token operator">IN</span> <span class="token punctuation">(</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> id <span class="token keyword keyword-FROM">FROM</span> departments <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Open Source'</span> <span class="token operator">OR</span> name <span class="token operator">=</span> <span class="token string">'Java'</span>
+<span class="token punctuation">)</span>
+</code></pre><blockquote>
+<p>⭐ <strong>What to Remember:</strong> Using <code>=</code> with a subquery that returns more than one row will throw an error. Always use <code>IN</code> when the subquery can return multiple rows.</p>
+</blockquote>
+<p><strong>Use <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code> with a single-value subquery:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Employees in departments with higher ID than Open Source</span>
+<span class="token keyword keyword-WHERE">WHERE</span> department_id <span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> id <span class="token keyword keyword-FROM">FROM</span> departments <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Open Source'</span><span class="token punctuation">)</span>
+</code></pre><h3 id="63-any-and-all-keywords">6.3 ANY and ALL Keywords </h3>
+<p>When comparing against a multi-value subquery with <code>&gt;</code> or <code>&lt;</code>:</p>
+<p><strong>ANY (equivalent to OR):</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-WHERE">WHERE</span> department_id <span class="token operator">&gt;</span> <span class="token keyword keyword-ANY">ANY</span> <span class="token punctuation">(</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> id <span class="token keyword keyword-FROM">FROM</span> departments <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Open Source'</span> <span class="token operator">OR</span> name <span class="token operator">=</span> <span class="token string">'Java'</span>
+<span class="token punctuation">)</span>
+<span class="token comment">-- Means: department_id &gt; 100 OR department_id &gt; 200</span>
+<span class="token comment">-- = department_id &gt; 100 (the smaller value)</span>
+</code></pre><p><strong>ALL (equivalent to AND):</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-WHERE">WHERE</span> department_id <span class="token operator">&gt;</span> <span class="token keyword keyword-ALL">ALL</span> <span class="token punctuation">(</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> id <span class="token keyword keyword-FROM">FROM</span> departments <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Open Source'</span> <span class="token operator">OR</span> name <span class="token operator">=</span> <span class="token string">'Java'</span>
+<span class="token punctuation">)</span>
+<span class="token comment">-- Means: department_id &gt; 100 AND department_id &gt; 200</span>
+<span class="token comment">-- = department_id &gt; 200 (must be greater than the largest)</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>= ANY</code></td>
+<td>Same as <code>IN</code></td>
+</tr>
+<tr>
+<td><code>&gt; ANY</code></td>
+<td>Greater than the <strong>minimum</strong> value</td>
+</tr>
+<tr>
+<td><code>&gt; ALL</code></td>
+<td>Greater than the <strong>maximum</strong> value</td>
+</tr>
+<tr>
+<td><code>&lt; ANY</code></td>
+<td>Less than the <strong>maximum</strong> value</td>
+</tr>
+<tr>
+<td><code>&lt; ALL</code></td>
+<td>Less than the <strong>minimum</strong> value</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Subquery Readability Issue:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Nested subqueries are read from inside → outside (hard to follow)</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> films
+<span class="token keyword keyword-WHERE">WHERE</span> id <span class="token operator">IN</span> <span class="token punctuation">(</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> film_id <span class="token keyword keyword-FROM">FROM</span> film_category
+    <span class="token keyword keyword-WHERE">WHERE</span> category_id <span class="token operator">=</span> <span class="token punctuation">(</span>
+        <span class="token keyword keyword-SELECT">SELECT</span> id <span class="token keyword keyword-FROM">FROM</span> category <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Action'</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>This is hard to read as complexity grows. Solution → <strong>CTEs</strong>.</p>
+<hr>
+<h2 id="7-common-table-expressions-ctes">7. Common Table Expressions (CTEs) </h2>
+<h3 id="71-what-is-a-cte">7.1 What Is a CTE? </h3>
+<p>A <strong>CTE (Common Table Expression)</strong> is a <strong>named temporary result set</strong> defined at the top of a query using the <code>WITH</code> keyword. It makes complex queries more readable by breaking them into <strong>named steps</strong> that you read top-to-bottom.</p>
+<p><strong>Key advantage:</strong> Readability — you can follow the logic like reading a document, step by step.</p>
+<h3 id="72-cte-syntax">7.2 CTE Syntax </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-WITH">WITH</span> cte_name <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span>
+    <span class="token comment">-- Your query here</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">)</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> cte_name<span class="token punctuation">;</span>
+</code></pre><h3 id="73-chaining-multiple-ctes">7.3 Chaining Multiple CTEs </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-WITH">WITH</span>
+  action_category <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span>
+      <span class="token keyword keyword-SELECT">SELECT</span> id
+      <span class="token keyword keyword-FROM">FROM</span> category
+      <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Action'</span>
+  <span class="token punctuation">)</span><span class="token punctuation">,</span>
+  action_film_ids <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span>
+      <span class="token keyword keyword-SELECT">SELECT</span> film_id
+      <span class="token keyword keyword-FROM">FROM</span> film_category
+      <span class="token keyword keyword-WHERE">WHERE</span> category_id <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> id <span class="token keyword keyword-FROM">FROM</span> action_category<span class="token punctuation">)</span>
+  <span class="token punctuation">)</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span>
+<span class="token keyword keyword-FROM">FROM</span> film
+<span class="token keyword keyword-WHERE">WHERE</span> id <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> film_id <span class="token keyword keyword-FROM">FROM</span> action_film_ids<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>How it reads:</strong></p>
+<ol>
+<li><code>action_category</code> → get the ID of the "Action" category.</li>
+<li><code>action_film_ids</code> → get all film IDs that belong to "Action".</li>
+<li>Final SELECT → retrieve full film details.</li>
+</ol>
+<p><strong>CTE Rules:</strong></p>
+<ul>
+<li>A CTE can only reference <strong>CTEs defined before it</strong> (above it in the WITH clause).</li>
+<li>You cannot reference a later CTE from an earlier one.</li>
+<li>The final SELECT after all CTEs is the <strong>main query</strong>.</li>
+</ul>
+<h3 id="74-cte-vs-subquery">7.4 CTE vs. Subquery </h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Subquery</th>
+<th>CTE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Readability</td>
+<td>Read inside → out (harder)</td>
+<td>Read top → bottom (easier)</td>
+</tr>
+<tr>
+<td>Reusability in query</td>
+<td>Must repeat if needed multiple times</td>
+<td>Define once, reference many times</td>
+</tr>
+<tr>
+<td>Recursion</td>
+<td>Not supported</td>
+<td>Supported (Recursive CTE)</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>Only within the surrounding query</td>
+<td>Throughout the entire query</td>
+</tr>
+<tr>
+<td>In exam?</td>
+<td>Yes</td>
+<td>Mentioned as bonus knowledge</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note from Instructor:</strong> CTEs are <strong>not</strong> in the exam syllabus but are important in real-world work.</p>
+</blockquote>
+<p><strong>Recursive CTEs</strong> (advanced): A CTE can call itself, similar to recursion in programming. Must have a <strong>base condition</strong> to stop.</p>
+<hr>
+<h2 id="8-views">8. Views </h2>
+<h3 id="81-simple-regular-view">8.1 Simple (Regular) View </h3>
+<p>A <strong>View</strong> is a <strong>stored, named SELECT query</strong> saved in the database. It acts like a virtual table — you can SELECT from it like a table, but the underlying data comes from real tables.</p>
+<p><strong>Key characteristics of a Simple View:</strong></p>
+<ul>
+<li><strong>Does NOT store data</strong> on disk (no extra space).</li>
+<li>Every time you query a simple view, it <strong>re-executes the underlying query</strong> against the real tables.</li>
+<li>Persists across sessions (unlike CTEs which disappear after the query ends).</li>
+<li>Used for: <strong>security</strong> (hide sensitive columns), <strong>reusability</strong> (avoid re-writing complex queries), <strong>abstraction</strong> (present a simpler interface to users).</li>
+</ul>
+<h3 id="82-creating-a-view">8.2 Creating a View </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-VIEW">VIEW</span> long_films <span class="token keyword keyword-AS">AS</span>
+<span class="token keyword keyword-SELECT">SELECT</span> film_id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> description<span class="token punctuation">,</span> length
+<span class="token keyword keyword-FROM">FROM</span> film
+<span class="token keyword keyword-WHERE">WHERE</span> length <span class="token operator">&gt;</span> <span class="token number">100</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Query the view:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> long_films<span class="token punctuation">;</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> long_films <span class="token keyword keyword-WHERE">WHERE</span> film_id <span class="token operator">=</span> <span class="token number">147</span><span class="token punctuation">;</span>
+</code></pre><h3 id="83-updatable-views--rules">8.3 Updatable Views — Rules </h3>
+<p>A view is <strong>updatable</strong> (you can INSERT/UPDATE through it) only when <strong>all</strong> of these conditions hold:</p>
+<ol>
+<li>No <code>DISTINCT</code> keyword.</li>
+<li>No aggregate functions (<code>SUM</code>, <code>COUNT</code>, <code>AVG</code>, etc.).</li>
+<li>No <code>GROUP BY</code> or <code>HAVING</code>.</li>
+<li>No <code>UNION</code>.</li>
+<li>No subqueries in the SELECT list.</li>
+<li>The view references exactly <strong>one base table</strong> (no JOINs).</li>
+<li>Must be a <strong>one-to-one relationship</strong> between view rows and table rows.</li>
+</ol>
+<p><strong>If any condition is violated → the view is NOT updatable.</strong></p>
+<p><strong>Example — Non-updatable view (uses SUM and GROUP BY):</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-VIEW">VIEW</span> total_per_customer <span class="token keyword keyword-AS">AS</span>
+<span class="token keyword keyword-SELECT">SELECT</span> customer_id<span class="token punctuation">,</span> <span class="token function">SUM</span><span class="token punctuation">(</span>amount<span class="token punctuation">)</span> <span class="token keyword keyword-AS">AS</span> total
+<span class="token keyword keyword-FROM">FROM</span> payment
+<span class="token keyword keyword-GROUP">GROUP</span> <span class="token keyword keyword-BY">BY</span> customer_id<span class="token punctuation">;</span>
+
+<span class="token comment">-- This will fail:</span>
+<span class="token keyword keyword-UPDATE">UPDATE</span> total_per_customer <span class="token keyword keyword-SET">SET</span> customer_id <span class="token operator">=</span> <span class="token number">2</span> <span class="token keyword keyword-WHERE">WHERE</span> customer_id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token comment">-- Error: The target table is not updatable</span>
+</code></pre><p><strong>Why?</strong> One row in the view (customer 1's total) represents <strong>multiple rows</strong> in the base table (multiple payments). MySQL cannot determine which base row to update.</p>
+<p><strong>Example — Updatable view (simple SELECT):</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-VIEW">VIEW</span> long_films <span class="token keyword keyword-AS">AS</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> film <span class="token keyword keyword-WHERE">WHERE</span> length <span class="token operator">&gt;</span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- This WORKS:</span>
+<span class="token keyword keyword-UPDATE">UPDATE</span> long_films <span class="token keyword keyword-SET">SET</span> title <span class="token operator">=</span> <span class="token string">'New Title'</span> <span class="token keyword keyword-WHERE">WHERE</span> film_id <span class="token operator">=</span> <span class="token number">147</span><span class="token punctuation">;</span>
+<span class="token comment">-- It's equivalent to: UPDATE film SET title = 'New Title' WHERE film_id = 147;</span>
+</code></pre><h3 id="84-simple-view-vs-direct-query--performance">8.4 Simple View vs. Direct Query — Performance </h3>
+<blockquote>
+<p><strong>Does using a simple view improve performance compared to running the query directly?</strong></p>
+</blockquote>
+<p><strong>Answer: No — there is NO performance difference between a simple view and running the underlying query directly.</strong></p>
+<ul>
+<li>A simple view stores the <strong>query definition</strong>, not the results.</li>
+<li>Every time you call the view, MySQL executes the query <strong>from scratch</strong> against the base tables.</li>
+<li>It is <strong>identical</strong> in performance to writing the query yourself each time.</li>
+</ul>
+<p><strong>Why use a simple view then?</strong></p>
+<ul>
+<li><strong>Reusability:</strong> Write the complex query once, reference by name.</li>
+<li><strong>Security:</strong> Expose only certain columns/rows to users.</li>
+<li><strong>Persistence:</strong> Unlike CTEs, views survive after the session ends.</li>
+<li><strong>Abstraction:</strong> Simplify complex joins for other developers.</li>
+</ul>
+<h3 id="85-cte-vs-view--key-differences">8.5 CTE vs. View — Key Differences </h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>CTE</th>
+<th>Simple View</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>Only within the <strong>single query</strong> it's defined in</td>
+<td>Persistent — available <strong>across sessions</strong></td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>Not stored; vanishes after query ends</td>
+<td>Stored in database permanently</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Same as inline query</td>
+<td>Same as inline query</td>
+</tr>
+<tr>
+<td>Reuse across queries</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Creation syntax</td>
+<td><code>WITH name AS (...)</code></td>
+<td><code>CREATE VIEW name AS (...)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="86-materialized-view">8.6 Materialized View </h3>
+<blockquote>
+<p><strong>Note:</strong> Materialized Views are <strong>NOT available in MySQL</strong>. They exist in <strong>PostgreSQL</strong> and other database systems. This section was covered for general knowledge.</p>
+</blockquote>
+<p>A <strong>Materialized View</strong> is a view that <strong>physically stores</strong> its query results on disk.</p>
+<p><strong>How it works:</strong></p>
+<ol>
+<li>When created, the query executes and the results are <strong>saved to disk</strong> (like a real table).</li>
+<li>Subsequent queries read from the <strong>stored results</strong> — not from the base tables.</li>
+<li>To get updated results, you must <strong>REFRESH</strong> the materialized view manually.</li>
+</ol>
+<p><strong>Creating a Materialized View (PostgreSQL syntax):</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> MATERIALIZED <span class="token keyword keyword-VIEW">VIEW</span> long_films <span class="token keyword keyword-AS">AS</span>
+<span class="token keyword keyword-SELECT">SELECT</span> film_id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> description<span class="token punctuation">,</span> length
+<span class="token keyword keyword-FROM">FROM</span> film
+<span class="token keyword keyword-WHERE">WHERE</span> length <span class="token operator">&gt;</span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- Refresh to get latest data:</span>
+REFRESH MATERIALIZED <span class="token keyword keyword-VIEW">VIEW</span> long_films<span class="token punctuation">;</span>
+</code></pre><p><strong>Key behaviors:</strong></p>
+<ul>
+<li><strong>Table changes DO NOT automatically sync</strong> to the materialized view — you must REFRESH.</li>
+<li><strong>You cannot UPDATE a materialized view directly</strong> — it's read-only.</li>
+<li><strong>Data may be stale</strong> until REFRESH is called.</li>
+</ul>
+<h3 id="87-simple-view-vs-materialized-view--comparison">8.7 Simple View vs. Materialized View — Comparison </h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Simple View</th>
+<th>Materialized View</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data stored on disk</td>
+<td>❌ No</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td>Query re-runs on SELECT</td>
+<td>✅ Every time</td>
+<td>❌ No — reads from disk</td>
+</tr>
+<tr>
+<td>Performance (read)</td>
+<td>Same as base query</td>
+<td><strong>Faster</strong> — pre-computed</td>
+</tr>
+<tr>
+<td>Performance (write)</td>
+<td>N/A</td>
+<td>Overhead on REFRESH</td>
+</tr>
+<tr>
+<td>Data freshness</td>
+<td>Always current</td>
+<td><strong>Stale until REFRESH</strong></td>
+</tr>
+<tr>
+<td>Space usage</td>
+<td>None</td>
+<td>Takes disk space</td>
+</tr>
+<tr>
+<td>Updatable?</td>
+<td>Sometimes (see rules)</td>
+<td>❌ Read-only</td>
+</tr>
+<tr>
+<td>Reflects table changes?</td>
+<td>✅ Immediately</td>
+<td>❌ Only after REFRESH</td>
+</tr>
+<tr>
+<td>Available in MySQL?</td>
+<td>✅ Yes</td>
+<td>❌ No (PostgreSQL only)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>When to use a Materialized View:</strong></p>
+<ul>
+<li>The underlying query is <strong>complex and expensive</strong> (e.g., joins, aggregations across millions of rows).</li>
+<li>The data <strong>doesn't change frequently</strong> (or you can tolerate slightly stale data).</li>
+<li>You need <strong>fast reads</strong> and the query result set is manageable in size.</li>
+</ul>
+<p><strong>Example:</strong> 1,000,000 order records. You need Q1 orders (100,000 records) frequently.</p>
+<p>Without materialized view → scan 1,000,000 rows every time.<br>
+With materialized view → scan 100,000 pre-filtered rows, then apply any additional filters.</p>
+<hr>
+<h2 id="9-quick-reference-summary">9. Quick Reference Summary </h2>
+<h3 id="data-types">Data Types </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Numeric</span>
+<span class="token keyword keyword-TINYINT">TINYINT</span><span class="token punctuation">,</span> <span class="token keyword keyword-SMALLINT">SMALLINT</span><span class="token punctuation">,</span> <span class="token keyword keyword-INT">INT</span><span class="token punctuation">,</span> <span class="token keyword keyword-BIGINT">BIGINT</span>
+<span class="token keyword keyword-FLOAT">FLOAT</span><span class="token punctuation">,</span> <span class="token keyword keyword-DOUBLE">DOUBLE</span><span class="token punctuation">,</span> <span class="token keyword keyword-DECIMAL">DECIMAL</span><span class="token punctuation">(</span><span class="token keyword keyword-precision">precision</span><span class="token punctuation">,</span> scale<span class="token punctuation">)</span>
+
+<span class="token comment">-- String</span>
+<span class="token keyword keyword-CHAR">CHAR</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>       <span class="token comment">-- fixed-length</span>
+<span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>    <span class="token comment">-- variable-length</span>
+<span class="token keyword keyword-TEXT">TEXT</span>          <span class="token comment">-- long text</span>
+
+<span class="token comment">-- Date/Time</span>
+<span class="token keyword keyword-DATE">DATE</span>          <span class="token comment">-- YYYY-MM-DD</span>
+<span class="token keyword keyword-TIME">TIME</span>          <span class="token comment">-- HH:MM:SS</span>
+<span class="token keyword keyword-DATETIME">DATETIME</span>      <span class="token comment">-- YYYY-MM-DD HH:MM:SS (no timezone conversion)</span>
+<span class="token keyword keyword-TIMESTAMP">TIMESTAMP</span>     <span class="token comment">-- YYYY-MM-DD HH:MM:SS (auto timezone conversion, max 2038)</span>
+
+<span class="token comment">-- Special</span>
+<span class="token keyword keyword-ENUM">ENUM</span><span class="token punctuation">(</span><span class="token string">'val1'</span><span class="token punctuation">,</span> <span class="token string">'val2'</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>  <span class="token comment">-- restricted set of values</span>
+</code></pre><h3 id="constraints">Constraints </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span>           <span class="token comment">-- unique + not null, one per table</span>
+<span class="token operator">NOT</span> <span class="token boolean">NULL</span>              <span class="token comment">-- no empty values</span>
+<span class="token keyword keyword-UNIQUE">UNIQUE</span>                <span class="token comment">-- no duplicate values (allows one NULL)</span>
+<span class="token keyword keyword-CHECK">CHECK</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span>     <span class="token comment">-- custom condition</span>
+<span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>col<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> other_table<span class="token punctuation">(</span>col<span class="token punctuation">)</span>
+  <span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span> <span class="token operator">|</span> <span class="token keyword keyword-SET">SET</span> <span class="token boolean">NULL</span> <span class="token operator">|</span> <span class="token keyword keyword-RESTRICT">RESTRICT</span>
+  <span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-UPDATE">UPDATE</span> <span class="token keyword keyword-CASCADE">CASCADE</span> <span class="token operator">|</span> <span class="token keyword keyword-SET">SET</span> <span class="token boolean">NULL</span> <span class="token operator">|</span> <span class="token keyword keyword-RESTRICT">RESTRICT</span>
+</code></pre><h3 id="generated-columns">Generated Columns </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> t <span class="token punctuation">(</span>
+  col1 <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  col2 <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span>expression<span class="token punctuation">)</span> VIRTUAL<span class="token punctuation">,</span>   <span class="token comment">-- not stored</span>
+  col3 <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span>expression<span class="token punctuation">)</span> STORED      <span class="token comment">-- stored on disk</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><h3 id="dml">DML </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- INSERT</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> <span class="token keyword keyword-table">table</span> <span class="token punctuation">(</span>col1<span class="token punctuation">,</span> col2<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span>val1<span class="token punctuation">,</span> val2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> <span class="token keyword keyword-table">table</span> <span class="token punctuation">(</span>col1<span class="token punctuation">,</span> col2<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span>v1<span class="token punctuation">,</span> v2<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>v3<span class="token punctuation">,</span> v4<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">-- multiple rows</span>
+
+<span class="token comment">-- UPDATE</span>
+<span class="token keyword keyword-UPDATE">UPDATE</span> <span class="token keyword keyword-table">table</span> <span class="token keyword keyword-SET">SET</span> col <span class="token operator">=</span> val <span class="token keyword keyword-WHERE">WHERE</span> condition<span class="token punctuation">;</span>
+
+<span class="token comment">-- DELETE</span>
+<span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-FROM">FROM</span> <span class="token keyword keyword-table">table</span> <span class="token keyword keyword-WHERE">WHERE</span> condition<span class="token punctuation">;</span>
+
+<span class="token comment">-- Safe Update Mode</span>
+<span class="token keyword keyword-SET">SET</span> SQL_SAFE_UPDATES <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>  <span class="token comment">-- disable</span>
+<span class="token keyword keyword-SET">SET</span> SQL_SAFE_UPDATES <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment">-- re-enable</span>
+</code></pre><h3 id="foreign-key-management">Foreign Key Management </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Add FK</span>
+<span class="token keyword keyword-ALTER">ALTER</span> <span class="token keyword keyword-TABLE">TABLE</span> employees
+<span class="token keyword keyword-ADD">ADD</span> <span class="token keyword keyword-CONSTRAINT">CONSTRAINT</span> fk_name
+<span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>dept_id<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> departments<span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+<span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span>
+<span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-UPDATE">UPDATE</span> <span class="token keyword keyword-RESTRICT">RESTRICT</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- Drop FK</span>
+<span class="token keyword keyword-ALTER">ALTER</span> <span class="token keyword keyword-TABLE">TABLE</span> employees <span class="token keyword keyword-DROP">DROP</span> <span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> fk_name<span class="token punctuation">;</span>
+</code></pre><h3 id="subqueries">Subqueries </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Single-value result</span>
+<span class="token keyword keyword-WHERE">WHERE</span> col <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> col <span class="token keyword keyword-FROM">FROM</span> t <span class="token keyword keyword-WHERE">WHERE</span> condition<span class="token punctuation">)</span>
+
+<span class="token comment">-- Multi-value result</span>
+<span class="token keyword keyword-WHERE">WHERE</span> col <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> col <span class="token keyword keyword-FROM">FROM</span> t <span class="token keyword keyword-WHERE">WHERE</span> condition<span class="token punctuation">)</span>
+
+<span class="token comment">-- Comparison with ANY / ALL</span>
+<span class="token keyword keyword-WHERE">WHERE</span> col <span class="token operator">&gt;</span> <span class="token keyword keyword-ANY">ANY</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> col <span class="token keyword keyword-FROM">FROM</span> t <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>   <span class="token comment">-- &gt; min value</span>
+<span class="token keyword keyword-WHERE">WHERE</span> col <span class="token operator">&gt;</span> <span class="token keyword keyword-ALL">ALL</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> col <span class="token keyword keyword-FROM">FROM</span> t <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>   <span class="token comment">-- &gt; max value</span>
+</code></pre><h3 id="ctes">CTEs </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-WITH">WITH</span>
+  cte1 <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  cte2 <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword keyword-FROM">FROM</span> cte1 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> cte2<span class="token punctuation">;</span>
+</code></pre><h3 id="views">Views </h3>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- Create view</span>
+<span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-VIEW">VIEW</span> view_name <span class="token keyword keyword-AS">AS</span>
+<span class="token keyword keyword-SELECT">SELECT</span> col1<span class="token punctuation">,</span> col2 <span class="token keyword keyword-FROM">FROM</span> <span class="token keyword keyword-table">table</span> <span class="token keyword keyword-WHERE">WHERE</span> condition<span class="token punctuation">;</span>
+
+<span class="token comment">-- Query view</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> view_name<span class="token punctuation">;</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> view_name <span class="token keyword keyword-WHERE">WHERE</span> col <span class="token operator">=</span> val<span class="token punctuation">;</span>
+
+<span class="token comment">-- Drop view</span>
+<span class="token keyword keyword-DROP">DROP</span> <span class="token keyword keyword-VIEW">VIEW</span> view_name<span class="token punctuation">;</span>
+</code></pre><hr>
+<h2 id="10-potential-exam-questions">10. Potential Exam Questions </h2>
+<h3 id="conceptual-questions">Conceptual Questions </h3>
+<ol>
+<li>
+<p><strong>What is the main difference between <code>TIMESTAMP</code> and <code>DATETIME</code> in MySQL?</strong><br>
+→ Timezone handling: <code>TIMESTAMP</code> auto-converts based on session timezone; <code>DATETIME</code> stores as-is.</p>
+</li>
+<li>
+<p><strong>Why does <code>TIMESTAMP</code> have a maximum date of 2038?</strong><br>
+→ It's stored as a 32-bit Unix integer, which overflows on January 19, 2038.</p>
+</li>
+<li>
+<p><strong>What is the difference between <code>CHAR</code> and <code>VARCHAR</code>?</strong><br>
+→ <code>CHAR</code> is fixed-length (always occupies n bytes); <code>VARCHAR</code> is variable-length (uses actual length + 1–2 bytes).</p>
+</li>
+<li>
+<p><strong>What are the two implicit constraints in a <code>PRIMARY KEY</code>?</strong><br>
+→ UNIQUE and NOT NULL.</p>
+</li>
+<li>
+<p><strong>How does <code>UNIQUE</code> differ from <code>PRIMARY KEY</code>?</strong><br>
+→ A table can have only one PRIMARY KEY, but multiple UNIQUE constraints. <code>UNIQUE</code> alone allows one <code>NULL</code> value.</p>
+</li>
+<li>
+<p><strong>What does a <code>FOREIGN KEY</code> constraint enforce?</strong><br>
+→ Referential integrity: any value in the child's FK column must exist in the parent's referenced column.</p>
+</li>
+<li>
+<p><strong>What are the three referential actions for <code>ON DELETE</code> / <code>ON UPDATE</code>?</strong><br>
+→ RESTRICT (default), CASCADE, SET NULL.</p>
+</li>
+<li>
+<p><strong>What happens with <code>ON DELETE CASCADE</code>?</strong><br>
+→ When a parent row is deleted, all child rows referencing it are automatically deleted.</p>
+</li>
+<li>
+<p><strong>What happens with <code>ON DELETE SET NULL</code>?</strong><br>
+→ When a parent row is deleted, the child rows' FK column is set to NULL (the child rows remain).</p>
+</li>
+<li>
+<p><strong>What is a subquery and when do you use <code>IN</code> instead of <code>=</code>?</strong><br>
+→ A query nested inside another query. Use <code>=</code> when the subquery returns exactly one value; use <code>IN</code> when it may return multiple values.</p>
+</li>
+<li>
+<p><strong>What is the difference between <code>ANY</code> and <code>ALL</code> with comparison operators?</strong><br>
+→ <code>&gt; ANY</code> means greater than the minimum; <code>&gt; ALL</code> means greater than the maximum.</p>
+</li>
+<li>
+<p><strong>What is the main advantage of a CTE over a subquery?</strong><br>
+→ Readability — CTEs are named, read top-to-bottom, and can be reused within the same query.</p>
+</li>
+<li>
+<p><strong>What is a View, and does a simple view improve query performance?</strong><br>
+→ A view is a stored named query. A simple view does NOT improve performance — it re-executes the underlying query every time.</p>
+</li>
+<li>
+<p><strong>When is a view NOT updatable?</strong><br>
+→ When it uses DISTINCT, aggregate functions, GROUP BY, HAVING, UNION, subqueries in SELECT, or JOINs across multiple tables.</p>
+</li>
+<li>
+<p><strong>What is a Materialized View and how does it differ from a simple view?</strong><br>
+→ A materialized view stores its results physically on disk. It's faster to read but can become stale (must REFRESH). A simple view stores only the query definition, re-executes every time, and always shows current data.</p>
+</li>
+<li>
+<p><strong>Why might you prefer a NoSQL document database for a social profile use case?</strong><br>
+→ Because all user data (profile, jobs, education) can be stored as one document, enabling fast single-read retrieval without expensive JOINs across multiple tables.</p>
+</li>
+<li>
+<p><strong>What is the trade-off of document serialization in NoSQL?</strong><br>
+→ Fast reads (all data together), but slow updates (must rewrite the entire document to change one field).</p>
+</li>
+<li>
+<p><strong>What is the purpose of ORM?</strong><br>
+→ To bridge the impedance mismatch between object-oriented backend code (classes/objects) and relational database storage (rows/columns).</p>
+</li>
+<li>
+<p><strong>What is an ENUM and how is it stored internally?</strong><br>
+→ A column type with a predefined list of allowed string values. Stored internally as integer indexes, not strings.</p>
+</li>
+<li>
+<p><strong>What is the rule for expressions in a generated column?</strong><br>
+→ The expression must be <strong>deterministic</strong> — the same input must always produce the same output. Functions like <code>NOW()</code> or <code>RAND()</code> are not allowed.</p>
+</li>
+</ol>
+<hr>
+<h3 id="sql-writing-questions">SQL Writing Questions </h3>
+<p><strong>Q: Create a table <code>employees</code> with id (PK), name (NOT NULL), email (UNIQUE NOT NULL), salary (CHECK &gt;= 30000), and department_id (FK to <a href="http://departments.id">departments.id</a>, CASCADE on delete).</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> departments <span class="token punctuation">(</span>
+  id   <span class="token keyword keyword-INT">INT</span>          <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+  name <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> employees <span class="token punctuation">(</span>
+  id            <span class="token keyword keyword-INT">INT</span>         <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+  name          <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  email         <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword keyword-UNIQUE">UNIQUE</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  salary        <span class="token keyword keyword-INT">INT</span>         <span class="token keyword keyword-CHECK">CHECK</span> <span class="token punctuation">(</span>salary <span class="token operator">&gt;=</span> <span class="token number">30000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  department_id <span class="token keyword keyword-INT">INT</span><span class="token punctuation">,</span>
+  <span class="token keyword keyword-CONSTRAINT">CONSTRAINT</span> fk_emp_dept
+    <span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>department_id<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> departments<span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+    <span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span>
+    <span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-UPDATE">UPDATE</span> <span class="token keyword keyword-RESTRICT">RESTRICT</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Q: Write a subquery to find all employees in departments with "Open Source" or "Java" in their name.</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span>
+<span class="token keyword keyword-FROM">FROM</span> employees
+<span class="token keyword keyword-WHERE">WHERE</span> department_id <span class="token operator">IN</span> <span class="token punctuation">(</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> id
+    <span class="token keyword keyword-FROM">FROM</span> departments
+    <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Open Source'</span> <span class="token operator">OR</span> name <span class="token operator">=</span> <span class="token string">'Java'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Q: Rewrite the above as a CTE.</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-WITH">WITH</span> target_departments <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> id
+    <span class="token keyword keyword-FROM">FROM</span> departments
+    <span class="token keyword keyword-WHERE">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Open Source'</span> <span class="token operator">OR</span> name <span class="token operator">=</span> <span class="token string">'Java'</span>
+<span class="token punctuation">)</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span>
+<span class="token keyword keyword-FROM">FROM</span> employees
+<span class="token keyword keyword-WHERE">WHERE</span> department_id <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token keyword keyword-SELECT">SELECT</span> id <span class="token keyword keyword-FROM">FROM</span> target_departments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Q: Create a view showing all films with length &gt; 100 minutes.</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-VIEW">VIEW</span> long_films <span class="token keyword keyword-AS">AS</span>
+<span class="token keyword keyword-SELECT">SELECT</span> film_id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> description<span class="token punctuation">,</span> length
+<span class="token keyword keyword-FROM">FROM</span> film
+<span class="token keyword keyword-WHERE">WHERE</span> length <span class="token operator">&gt;</span> <span class="token number">100</span><span class="token punctuation">;</span>
+</code></pre><p><strong>Q: Create a table <code>users</code> with email and an auto-generated domain column.</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> users <span class="token punctuation">(</span>
+  email  <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  domain <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token keyword keyword-AS">AS</span> <span class="token punctuation">(</span>SUBSTRING_INDEX<span class="token punctuation">(</span>email<span class="token punctuation">,</span> <span class="token string">'@'</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> STORED
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><hr>
+<p><em>End of Study Notes — Good luck on your exam!</em></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
